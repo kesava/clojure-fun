@@ -15,7 +15,8 @@
 
 (defn list-of-divisors
   [x]
-  (let [list-of-divisors-within-boundary (list-of-divisors-within-boundary x) list-of-divisors-over-boundary (list-of-divisors-over-boundary x list-of-divisors-within-boundary)]
+  (let [list-of-divisors-within-boundary (list-of-divisors-within-boundary x) 
+        list-of-divisors-over-boundary (list-of-divisors-over-boundary x list-of-divisors-within-boundary)]
     (distinct (concat '(1) list-of-divisors-within-boundary list-of-divisors-over-boundary))))
 
 (defn is-perfect-number?
